@@ -6,14 +6,13 @@
      var myTarget = element.find('td.timestamp').data('target');
      var myManifest = element.find('td.timestamp').data('manifest');
      if (myTarget) {
-       target = myTarget + '#t=' + mySelectorTimestamp;
+       var target = myTarget + '#t=' + mySelectorTimestamp;
        //if (mySelectorEndTime) {
        //  target = myTarget + '#t=' + mySelectorTimestamp + ',' + mySelectorEndTime;
        //}
-       console.log(target);
        buttonPressIteration = -1;
-
-      if(true) {
+       
+       console.log('Setting {{ include.player_name }} to '+target);
        {{ include.player_name }}.set({
          target: target,
           manifestUri: myManifest,
@@ -23,7 +22,7 @@
           annotations: [],
           locales: [{ name: 'en-GB', label: 'English' }, { name: 'cy-GB', label: 'Welsh' }]
         });
-      }
+        console.log('Manifest of the player I touched was '+{{ include.player_name }}.options.data.manifest);
      }
    };
 
