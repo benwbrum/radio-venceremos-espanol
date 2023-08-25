@@ -19,7 +19,14 @@
         "purpose": "commenting"
       },
       "target": {
-        "source": "https://lgsump.github.io/radio-venceremos-espanol/1981-05-20-anotaciones/canvas-1/canvas",
+        "source": {
+          "id": "https://lgsump.github.io/radio-venceremos-espanol/1981-05-20-anotaciones/canvas-1/canvas",
+          "type": "Canvas",
+          "partOf": {
+            "id": "https://lgsump.github.io/radio-venceremos-espanol/1981-05-20-anotaciones/manifest.json",
+            "type": "Manifest"
+          }
+        }, 
         "selector": {
           "type": "RangeSelector",
           "t": "137.389295,160.896175"
